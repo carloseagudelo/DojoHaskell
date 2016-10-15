@@ -41,6 +41,16 @@ sumDigits [] = 0
 sumDigits (x:[]) = sum (toDigitRev x) 
 sumDigits (x:xs) = sum (toDigitRev x) + sumDigits xs
 
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+---Punto 4
+-- Entrada: Numero entero
+-- Retorna: Booleano
+--  Pasos:
+--  Recibir un entero y convertirlo a lista ordenada
+--  Doblar la lista de izquierda a derecha
+--  Sumar los digitos
+--  Sacar modulo 10 si es = 0 es valido
 
 validate :: Int -> Bool
 validate n
